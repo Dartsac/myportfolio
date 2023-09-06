@@ -22,7 +22,6 @@ navToggle.addEventListener('click', () =>{
   }
 });
 
-
 primaryNavOptions.forEach(element => {
   element.addEventListener('click', () => {
     const visibility = primaryNav.getAttribute('data-visible');

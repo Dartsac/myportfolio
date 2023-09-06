@@ -170,7 +170,9 @@ footer {
 
 .title {
  font-family: 'Xanh Mono', serif;
- font-size: clamp(calc(1rem * var(--base-gr)  * var(--base-gr)), 11.2vw, calc(1rem * var(--base-gr) * var(--base-gr) * var(--base-gr) * var(--base-gr)));
+ font-size: clamp(calc(1rem * var(--base-gr)  * var(--base-gr)), 11.2vw,
+ calc(1rem * var(--base-gr) * var(--base-gr) * var(--base-gr) *
+ var(--base-gr)));
  text-align: center;
  position: relative;
  margin: 50px 0;
@@ -178,7 +180,8 @@ footer {
 
 .subtitle {
   margin: 0;
-  font-size: clamp(calc(1rem * var(--base-gr)), calc(11.2vw / var(--base-gr)), calc(1rem * var(--base-gr) * var(--base-gr)));
+  font-size: clamp(calc(1rem * var(--base-gr)), calc(11.2vw / var(--base-gr)),
+  calc(1rem * var(--base-gr) * var(--base-gr)));
   text-align: center;
 }
 
