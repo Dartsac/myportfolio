@@ -5,16 +5,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -23,8 +23,8 @@
 
 :root {
   --base-gr: 1.61803398875;
-  --light-gray: #E5E5E5;
-  --base-gray: #9B9B9B;
+  --light-gray: #e5e5e5;
+  --base-gray: #9b9b9b;
   --dark-gray: #626262;
   --light-black: #343434;
   --black: #141414;
@@ -76,7 +76,6 @@ header {
 }
 
 footer {
-
 }
 
 /******************************************
@@ -114,7 +113,7 @@ footer {
   transition: transform 350ms ease-out;
 }
 
-#primary-navigation[data-visible = "true"] {
+#primary-navigation[data-visible='true'] {
   transform: translateX(0%);
 }
 
@@ -136,7 +135,7 @@ footer {
   right: 2rem;
 }
 
-.mobile.nav.toggle[aria-expanded = "true"] {
+.mobile.nav.toggle[aria-expanded='true'] {
   /*   */
 }
 
@@ -147,7 +146,7 @@ footer {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   border: 0;
 }
 
@@ -169,19 +168,26 @@ footer {
 }
 
 .title {
- font-family: 'Xanh Mono', serif;
- font-size: clamp(calc(1rem * var(--base-gr)  * var(--base-gr)), 11.2vw,
- calc(1rem * var(--base-gr) * var(--base-gr) * var(--base-gr) *
- var(--base-gr)));
- text-align: center;
- position: relative;
- margin: 50px 0;
+  font-family: 'Xanh Mono', serif;
+  font-size: clamp(
+    calc(1rem * var(--base-gr) * var(--base-gr)),
+    11.2vw,
+    calc(
+      1rem * var(--base-gr) * var(--base-gr) * var(--base-gr) * var(--base-gr)
+    )
+  );
+  text-align: center;
+  position: relative;
+  margin: 50px 0;
 }
 
 .subtitle {
   margin: 0;
-  font-size: clamp(calc(1rem * var(--base-gr)), calc(11.2vw / var(--base-gr)),
-  calc(1rem * var(--base-gr) * var(--base-gr)));
+  font-size: clamp(
+    calc(1rem * var(--base-gr)),
+    calc(11.2vw / var(--base-gr)),
+    calc(1rem * var(--base-gr) * var(--base-gr))
+  );
   text-align: center;
 }
 
@@ -224,7 +230,6 @@ footer {
   text-decoration: none;
 }
 
-
 .project-item {
   position: relative;
   cursor: pointer;
@@ -240,7 +245,10 @@ footer {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  box-shadow: 0 100px 80px rgb(50 50 50 / 10%), 0 22.3363px 24.1461px rgb(51 51 50 / 4%), 0 6.6501px 7.51704px rgb(51 51 50 / 1%);
+  box-shadow:
+    0 100px 80px rgb(50 50 50 / 10%),
+    0 22.3363px 24.1461px rgb(51 51 50 / 4%),
+    0 6.6501px 7.51704px rgb(51 51 50 / 1%);
 }
 
 .project-img-1 {
@@ -267,9 +275,7 @@ footer {
 }
 
 .project-img-3 {
-
 }
-
 
 .item-content {
   margin-top: 20px;
@@ -293,9 +299,9 @@ footer {
 
 .subtitle-sm {
   margin: 0;
-  margin-top: .75rem;
+  margin-top: 0.75rem;
 
-  font-size: .6875rem;
+  font-size: 0.6875rem;
   font-weight: 300;
   line-height: 1rem;
   text-transform: uppercase;
@@ -312,12 +318,11 @@ footer {
   transform: rotate(-90deg);
   transform-origin: top right;
 
-  font-size: .5rem;
+  font-size: 0.5rem;
   font-weight: 500;
 
   color: var(--black);
 }
-
 
 @media only screen and (min-width: 760px) {
   /* could just not show this and create a completely new header. */
